@@ -1,0 +1,53 @@
+# OS-specific
+.DS_Store
+Thumbs.db
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.egg
+*.egg-info/
+.dist-info/
+dist/
+build/
+.eggs/
+pip-wheel-metadata/
+*.log
+
+# Virtual environments
+.venv/
+venv/
+ENV/
+env/
+
+# Tooling caches
+.pytest_cache/
+.coverage
+.coverage.*
+.cache/
+.mypy_cache/
+.pyre/
+.pytype/
+.tox/
+
+# Editors/IDE
+.vscode/
+.idea/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Environment/Secrets
+.env
+.env.*
+*.env
+
+# Streamlit
+.streamlit/
+
+# Misc
+*.swp
+*.swo
