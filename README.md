@@ -29,18 +29,19 @@ flowchart TD
 - Ask questions; the app calls Gemini with a File Search tool configured to your active store.
 - Answers combine model reasoning with retrieved context from your indexed files.
 
+## Hosted sample app
+A sample app is hosted at https://simple-gemini-rag.streamlit.app/
+
 ## Local setup
 1. Clone or open this project directory.
-2. Ensure you have Python (3.10+ recommended).
-   - Create a virtual environment: `python3 -m venv .venv`
+2. Ensure uv is installed.
+   - Create a virtual environment: `uv venv`
    - Activate it: `source .venv/bin/activate`
 3. Install dependencies:
-   - `pip install -r requirements.txt`
-4. Set your Google API key:
-   - Paste the key in the app’s sidebar input when it launches
+   - `uv pip install -r requirements.txt`
+4. Provide your Google API key in the app’s sidebar input when it launches.
 5. Run the app:
-   - `python -m streamlit run app.py`
-   - Or: `.venv/bin/python -m streamlit run app.py`
+   - `uv run -m streamlit run app.py`
 
 ## Usage
 1. In the sidebar “Setup,” provide your Google API key.

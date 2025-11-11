@@ -352,7 +352,7 @@ with tabs[1]:
     else:
         question = st.text_area("Your question", placeholder="Ask something about your uploaded files...")
         model_name = st.selectbox("Model", ["gemini-2.5-flash", "gemini-2.5-pro"], index=0)
-        use_default_prompt = st.checkbox("Use default system prompt", value=True, help="When unchecked, the hardcoded system instruction is excluded.", key="_use_default_sys_prompt")
+        use_default_prompt = st.checkbox("Use default system prompt (Bug bounty program search)", value=True, help="When unchecked, the hardcoded system instruction is excluded.", key="_use_default_sys_prompt")
         ask = st.button("Ask")
 
         if ask and question.strip():
