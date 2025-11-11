@@ -10,7 +10,19 @@ A minimal dashboard for creating and managing Gemini File Search stores, uploadi
 - Optional “Raw response” expander for debugging responses
 - Network request logging suppression to keep terminal output clean
 
-## How it works (brief)
+## Minimal workflow
+```mermaid
+flowchart TD
+  A[Sidebar: Provide Google API key] --> B[Create or select File Search store]
+  B --> C[Upload local files]
+  C --> D[Import + Index into selected store]
+  D --> E[Ask Questions tab: type your query]
+  E --> F[Gemini model with File Search tool]
+  F --> G[Answer shown in dashboard]
+  F --> H[Optional: Raw response expander for debugging]
+```
+
+## How it works
 - You provide a Google API key in the sidebar.
 - Create or select a File Search store.
 - Upload files; each file is imported directly into the selected store.
@@ -19,7 +31,7 @@ A minimal dashboard for creating and managing Gemini File Search stores, uploadi
 
 ## Local setup
 1. Clone or open this project directory.
-2. Ensure you have Python (3.10+ recommended). On macOS:
+2. Ensure you have Python (3.10+ recommended).
    - Create a virtual environment: `python3 -m venv .venv`
    - Activate it: `source .venv/bin/activate`
 3. Install dependencies:
@@ -45,7 +57,3 @@ A minimal dashboard for creating and managing Gemini File Search stores, uploadi
 - Prepare text or structured files locally (txt, md, csv, json, pdf, etc.).
 - Upload them to your selected store.
 - Ask targeted questions referencing the uploaded datasets.
-
-## Logging suppression
-- The app reduces noisy terminal logs from common request handlers to keep output clean.
-- If you need more insight, use the “Raw response” expander under the Ask tab.
