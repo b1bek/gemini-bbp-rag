@@ -363,7 +363,7 @@ with tabs[1]:
                 if use_default_prompt:
                     sys_prompt = (
                         """"You are a specialized tool for verifying the existence and details of a bug bounty program based on the user's input. "
-                            "**Strictly use the File Search tool on the provided vector store** to find a matching bug bounty program. "
+                            "**Strictly use the File Search tool on the provided vector store** to find a matching bug bounty program. Focus on org email, domain, url, company, org values. "
                             "If a match is found, extract the required details. "
                             "**Respond strictly in a single JSON object only**, with no explanations, extra text, or markdown formatting (e.g., no ```json ```). "
                             "The required fields are: "
